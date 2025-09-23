@@ -1,0 +1,87 @@
+@use "sass:map";
+/* ============================================
+// global mixin
+// ==========================================*/
+$sizes: sm, md, lg, xl;
+$mq-breakpoints: (
+  "sm": 600px,
+  "md": 960px,
+  "lg": 1280px,
+  "xl": 1920px,
+  "xxl": 2560px,
+) !default;
+
+@mixin mq($breakpoint: md, $rule: min) {
+  $breakpoint: map.get($mq-breakpoints, $breakpoint);
+
+  @if $rule==max {
+    $breakpoint: $breakpoint - 1px;
+  }
+
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin position_ab_tl($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin position_ab_tr($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin position_ab_bl($bottom, $left) {
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin position_ab_br($bottom, $right) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin position_ab_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin background_no-repeat($url, $position, $size) {
+  background: url($url) no-repeat $position/$size;
+}
+
+@mixin background_default {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin container-half {
+  @include mixin.mq("sm") {
+    width: calc(100vw - (100% - 576px) / 2);
+  }
+
+  @include mixin.mq("md") {
+    width: calc(100vw - (100% - 768px) / 2);
+  }
+
+  @include mixin.mq("lg") {
+    width: calc(100% - (100% - 960px) / 2);
+  }
+
+  @include mixin.mq("xl") {
+    width: calc(100% - (100% - 960px) / 2);
+  }
+
+  @include mixin.mq("2xl") {
+    width: calc(100% - (100% - 960px) / 2);
+  }
+}

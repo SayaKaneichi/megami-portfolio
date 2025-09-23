@@ -1,0 +1,55 @@
+/* ============================================
+// component heading
+// ==========================================*/
+@use "../global/mixin" as mixin;
+@use "../global/color" as *;
+
+.c-heading-h2 {
+  font-size: 24px;
+  text-align: center;
+  @include mixin.mq(md) {
+    font-size: 40px;
+  }
+}
+
+span.required::after {
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  margin-left: 2px;
+  background: #fff;
+  line-height: 1;
+  font-size: 16px;
+  color: #ff0000;
+  content: "*";
+  text-align: center;
+  vertical-align: text-top;
+}
+
+.dialogTitle {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.inputField {
+  :deep(.v-input__details) {
+    padding-inline: 0 !important;
+  }
+  :deep(.v-text-field__suffix) {
+    font-size: 14px;
+    color: #0a0a0a;
+    height: 100%;
+  }
+  :deep(.vmessages) {
+    color: #0a0a0a;
+  }
+}
+
+.v-container {
+  padding: 0 !important;
+}
+
+.lineStyleButton {
+  background-color: $c-line-green !important;
+  color: white !important;
+  font-weight: bold;
+}
