@@ -1,0 +1,47 @@
+/* ============================================
+// global color
+// ==========================================*/
+// 優先度1:接頭辞-セマンティックな命名
+$c-base: #333333;
+// $c-main: #dddcd9;
+// $c-accent: #251714;
+// $c-primary: #E60112;
+// $c-secondary: #CA8D68;
+
+// 優先度2:接頭辞-セマンティックな命名-明るさ
+// $c-accent-lightest: #***;
+// $c-accent-lighter: #***;
+// $c-accent-light: #***: $c-accent-dark: #***;
+// $c-accent-darker: #***;
+// $c-accent-darkest: #***;
+
+// 優先度3:接頭辞-セマンティックな命名-明るさ連番（できるだけ使わない）
+// $c-accent-lighter02: #***;
+// $c-accent-lighter03: #***;
+
+// 優先度4:接頭辞-色の名前
+// $c-red: #***;
+// $c-gray: #***;
+$c-black: #000000;
+$c-white: #ffffff;
+$c-gray: #e9ebed;
+$c-red: #dc0032;
+$c-pink: #faf5f5;
+$c-green: #06bf00;
+$c-yellow: #ffe100;
+$c-blue: #1e73be;
+
+// 優先度5:接頭辞-色の名前-明るさ
+// $c-gray-lightest: #***;
+// $c-gray-lighter: #***;
+// $c-gray-light: #***;
+// $c-gray-dark: #***;
+// $c-gray-darker: #***;
+// $c-gray-darkest: #***;
+$c-gray-darker: #f7f7f7;
+
+// 優先度6:接頭辞-色の名前-明るさ連番（できるだけ使わない）
+// $c-gray-lighter02: #***;
+// $c-gray-lighter03: #***:
+
+$c-line-green: #12c646;
