@@ -1163,6 +1163,7 @@ async function toConfirmCancel() {
 
 <style scoped lang="scss">
 @use "@/assets/styles/global/mixin" as mixin;
+@use "@/assets/styles/global/color" as color;
 
 .l-main__calendar {
   max-width: 900px;
@@ -1174,19 +1175,19 @@ async function toConfirmCancel() {
   &-weekly,
   &-row {
     display: flex;
-    border-left: 1px solid $c-gray;
+    border-left: 1px solid color.$c-gray;
   }
 
   &-weekly {
-    border-top: 1px solid $c-gray;
-    border-bottom: 1px solid rgba($c-gray, 1);
+    border-top: 1px solid color.$c-gray;
+    border-bottom: 1px solid rgba(color.$c-gray, 1);
   }
 
   &-youbi {
     flex: 1;
     font-size: 14px;
     text-align: center;
-    border-right: 1px solid $c-gray;
+    border-right: 1px solid color.$c-gray;
     padding: 0.25em 0;
     width: calc(100% / 7);
   }
@@ -1196,8 +1197,8 @@ async function toConfirmCancel() {
     text-align: center;
     flex: 1;
     min-height: 90px;
-    border-right: 1px solid $c-gray;
-    border-bottom: 1px solid $c-gray;
+    border-right: 1px solid color.$c-gray;
+    border-bottom: 1px solid color.$c-gray;
     padding-top: 0.1rem;
     width: calc(100% / 7);
 
@@ -1207,7 +1208,7 @@ async function toConfirmCancel() {
     }
 
     &.outside {
-      background-color: $c-gray-darker;
+      background-color: color.$c-gray-darker;
     }
     &:hover {
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
