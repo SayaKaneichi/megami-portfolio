@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   ssr: false,
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['vuetify-nuxt-module', '@nuxtjs/supabase'],
+  modules: ['vuetify-nuxt-module', '@nuxtjs/supabase',"dayjs-nuxt"],
   runtimeConfig: {
     public: {
       BASE_URL: process.env.BASE_URL,
@@ -20,5 +20,10 @@ export default defineNuxtConfig({
     key: process.env.SUPABASE_KEY,
     redirect: false,
   },
-  
+  dayjs: {
+    locales: ["ja"],
+    defaultLocale: "ja",
+    plugins: ["relativeTime", "utc", "timezone"],
+    defaultTimezone: "Asia/Tokyo",
+  },
 })
