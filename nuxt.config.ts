@@ -26,4 +26,5 @@ export default defineNuxtConfig({
     plugins: ["relativeTime", "utc", "timezone"],
     defaultTimezone: "Asia/Tokyo",
   },
+  vite: { server: { watch: { usePolling: true, interval: 300 } } },
 })
