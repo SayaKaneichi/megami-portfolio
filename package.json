@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "CHOKIDAR_USEPOLLING=1 NUXT_DISABLE_RESTART=1 NODE_OPTIONS='--trace-warnings' nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -20,6 +20,6 @@
     "vuetify-nuxt-module": "^0.16.1"
   },
   "devDependencies": {
-    "sass-embedded": "^1.93.2"
+    "sass": "^1.93.2"
   }
 }
