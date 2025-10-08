@@ -195,7 +195,7 @@ function resetDialog() {
 }
 </script>
 
-<style scoped lang="scss">
+<style>
 .listRow {
   display: flex;
   align-items: center;

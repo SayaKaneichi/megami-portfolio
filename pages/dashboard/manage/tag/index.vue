@@ -114,7 +114,7 @@
               :disabled="isTagEmpty"
               @click="registerTag()"
             >
-              {{ isEditMode ? "保存" : "登録" }}
+              {{ isEditMode ? "更新" : "登録" }}
             </v-btn>
           </v-col>
         </v-row>
@@ -363,7 +363,7 @@ async function rejectTag(id) {
 }
 </script>
 
-<style scoped lang="scss">
+<style>
 .listRow {
   display: flex;
   justify-content: space-between;

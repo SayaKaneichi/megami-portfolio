@@ -300,7 +300,7 @@ async function fetchVenueLinkage(notificationType) {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .cancelBtn {
   background-color: #9e9e9e !important;
   color: white !important;
