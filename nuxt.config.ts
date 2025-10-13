@@ -26,5 +26,25 @@ export default defineNuxtConfig({
     plugins: ["relativeTime", "utc", "timezone"],
     defaultTimezone: "Asia/Tokyo",
   },
-  vite: { server: { watch: { usePolling: true, interval: 300 } } },
+  vite: { 
+    server: { 
+      watch: { 
+        usePolling: true, interval: 300 
+      } 
+    } ,
+    optimizeDeps: {
+      include: ["cookie"],
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@use "@/assets/styles/global/_font-family" as *; \
+          @use "@/assets/styles/global/_color" as *; \
+          @use "@/assets/styles/global/_function" as *; \
+          @use "@/assets/styles/global/_mixin" as *; \
+          @use "@/assets/styles/component/_component" as *;`,
+        },
+      },
+    },
+  },
 })
