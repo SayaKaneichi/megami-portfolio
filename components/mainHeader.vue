@@ -62,7 +62,7 @@
 </template>
 
 <script setup>
-import { VTreeview } from 'vuetify/labs/VTreeview'
+// import { VTreeview } from 'vuetify/labs/VTreeview'
 const props = defineProps({
   items: {
     type: Array,
