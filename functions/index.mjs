@@ -892,6 +892,62 @@ export const createVenue = onCall(async (request) => {
   }
 });
 
+//会場の編集
+export const updateVenue = onCall(async (request) => {
+  try {
+    const { id, venue_name, venue_address } = request.data;
+
+    const { error } = await supabaseAdmin
+      .from("venue_master")
+      .update({ venue_name, venue_address })
+      .eq("id", id);
+
+    if (error) {
+      throw new Error(
+        "会場変更に失敗しました。。リロードして再度試してください。"
+      );
+    }
+    return {
+      message: "successfully",
+    };
+  } catch (error) {
+    throw new functions.https.HttpsError(
+      "internal",
+      error.message || "予期しないエラーが発生しました"
+    );
+  }
+});
+
+//会場の削除
+export const removeVenue = onCall(async (request) => {
+  try {
+    const venueId = request.data.id;
+
+    const { error } = await supabaseAdmin
+      .from("venue_master")
+      .delete()
+      .eq("id", venueId);
+
+    if (error) {
+      console.error(error);
+      throw new Error(
+        "会場削除に失敗しました。リロードして再度試してください。"
+      );
+    }
+    return {
+      message: "successfully",
+    };
+  } catch (error) {
+    if (error instanceof functions.https.HttpsError) {
+      throw error;
+    }
+    throw new functions.https.HttpsError(
+      "internal",
+      error.message || "予期しないエラーが発生しました"
+    );
+  }
+});
+
 //イベント更新
 export const updateEvent = onCall(async (request) => {
   try {
