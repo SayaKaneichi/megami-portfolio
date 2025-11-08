@@ -1,26 +1,3 @@
-<!-- <template>
-  <v-container class="pa-6">
-    <v-btn color="primary">Hello Vuetify</v-btn>
-  </v-container>
-
-  <pre>{{ data }}</pre>
-  
-</template>
-
-<script setup lang="ts">
-const supabase = useSupabaseClient()
-const { data, error } = await supabase
-  .from('tag_master')
-  .select()
-  console.log(data)
-
-  if(error){
-      console.log(error)
-    }
-  
-</script> -->
-
-
 <template>
   <h2 class="c-heading-h2 text-indigo-darken-4">{{ displayMonth }}</h2>
   <div class="d-flex justify-end mt-1">

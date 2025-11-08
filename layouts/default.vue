@@ -50,6 +50,11 @@ items.value = [
     to: `/`,
   },
   {
+    icon: "mdi-map-marker-radius",
+    title: "会場管理",
+    to: `/venue`,
+  },
+  {
     icon: "mdi-information-outline",
     title: '情報管理',
     children:
