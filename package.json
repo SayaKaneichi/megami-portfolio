@@ -7,7 +7,8 @@
     "dev": "CHOKIDAR_USEPOLLING=1 NUXT_DISABLE_RESTART=1 NODE_OPTIONS='--trace-warnings' nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "firebase use megamiportfolio && npm run generate && firebase deploy --only hosting"
   },
   "dependencies": {
     "@nuxtjs/supabase": "^1.6.2",

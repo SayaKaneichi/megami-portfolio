@@ -10,14 +10,6 @@ import {
 
 import { defineNuxtPlugin } from '#app'
 
-// plugIn呼び出し時に型エラーunknownとなる問題に対する対策
-// 参考) https://stackoverflow.com/questions/75834879/nuxt-3-usenuxtapp-returns-type-unknown
-// declare module '#app' {
-//   interface NuxtApp {
-//     $httpsCallable: (api: string, data: unknown) => Promise<any>
-//   }
-// }
-
 export default defineNuxtPlugin((nuxtApp) => {
   // Your web app's Firebase configuration
   const firebaseConfig = {

@@ -18,16 +18,16 @@
     }
   },
   "hosting": {
-    "public": "public",
+    "public": ".output/public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
+      {  
+        "source": "**", 
+        "function": "nuxtServer"
       }
     ]
   }
