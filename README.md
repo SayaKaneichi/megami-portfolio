@@ -1,7 +1,7 @@
 # megami
 
 ## 📌 概要
-このリポジトリは、チーム開発/実務案件で担当した機能部分を抜粋したものです。  
+このリポジトリは、チーム開発で担当した機能を抜粋し再構築したものです。  
 全体の開発プロジェクトの中で、私が担当したページ/機能を整理し、ポートフォリオ用にまとめています。  
 
 ## 🎯 担当範囲
@@ -20,9 +20,9 @@
 - リレーションDB設計：中間テーブルを利用した多対多管理
 - チームでの開発フローに基づいたGit運用：featureブランチ → developへのPR
 
-## 📸 デモ / キャプチャ
--現在、担当範囲のみのコードでデプロイ作業をしています。
--稼働イメージをFigmaにて掲載しています。→【https://www.figma.com/design/VpoRbNJfjKbFzMZ1XcPeFI/megamoPortfolio?node-id=0-1&t=SNgF8Qu2gshxwBal-1】 
+## 📸 デモ 
+-稼働イメージをFigmaにて掲載しています。→【https://www.figma.com/design/VpoRbNJfjKbFzMZ1XcPeFI/megamoPortfolio?node-id=0-1&t=SNgF8Qu2gshxwBal-1】
+-アプリURL【https://megamiportfolio.web.app/】
 
 ## 📂 コード構成
 フロントエンド
@@ -45,8 +45,7 @@
  /index.mjs(バックエンド一元管理)
 
 ## 🚀 実行方法
-このリポジトリはポートフォリオ用に抜粋したコードのため、動作環境は再現していません。（現在、担当範囲のみのコードでデプロイ作業をしています）  
-動作イメージはFigmaをご覧ください。  
+-アプリURL【https://megamiportfolio.web.app/】  
 
 ## 👤 補足
 - 開発形態: チーム開発 / 実務案件  
