@@ -22,7 +22,7 @@
 
 ## 📸 デモ 
 - 稼働イメージをFigmaにて掲載しています。→【https://www.figma.com/design/VpoRbNJfjKbFzMZ1XcPeFI/megamoPortfolio?node-id=0-1&t=SNgF8Qu2gshxwBal-1】
-- アプリURL【https://megamiportfolio.web.app/】
+- アプリURL【https://megamiportfolio.web.app】
 
 ## 📂 コード構成
 フロントエンド
@@ -45,7 +45,7 @@
  /index.mjs(バックエンド一元管理)
 
 ## 🚀 実行方法
-- アプリURL【https://megamiportfolio.web.app/】  
+- アプリURL【https://megamiportfolio.web.app】  
 
 ## 👤 補足
 - 開発形態: チーム開発 / 実務案件  
